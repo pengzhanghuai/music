@@ -1,0 +1,81 @@
+.banner{
+    width: 100%;
+    height: 3rem;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.banner .swiper-container{
+    width: 100%;
+    height: 3rem;
+}
+.wrapper{
+    margin-top: .3rem;
+    width: 100%;
+    min-height: 1rem;
+}
+.wrapper h2{
+    font-weight: normal;
+    border-left:2px solid  red;
+    padding-left: .2rem;
+}
+.wrapper .sheetlist{
+    padding: 0.05rem;
+    margin-top: .1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrapper .sheetlist .item{
+    width: 32%;
+    margin-bottom: .1rem;
+}
+.wrapper .sheetlist .item img{
+    width: 2rem;
+    height: 2rem;
+}
+.wrapper .sheetlist .item .title{
+    font-size: .2rem;
+    line-height: .3rem;
+    
+}
+.wrapper .songlist{
+    padding-top: .3rem;
+}
+.wrapper .songlist .item{
+    padding: .15rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .songlist .item .info .song{
+    font-size: .3rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.wrapper .songlist .item .info .singer{
+    font-size: .2rem;
+    margin-top: .2rem;
+    color: #666;
+}
+.wrapper .songlist .item .info .singer .icon{
+    display: inline-block;
+    width: .24rem;
+    height: .16rem;
+    margin-right: .08rem;
+    background: url(/static/img/index_icon_2x.png) no-repeat;
+    background-size: 3.32rem 1.94rem;
+}
+.wrapper .songlist .item .goplay span{
+    background: url("/static/img/index_icon_2x.png") no-repeat;
+    background-position: -0.28rem 0 ;
+    background-size: 2.8rem 1.7rem;
+    display: block;
+    width: .5rem;
+    height: .5rem;
+}

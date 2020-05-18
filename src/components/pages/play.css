@@ -1,0 +1,98 @@
+.play{
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    position: relative;
+}
+.top{
+    background: url(/static/img/needle-ip6.png) no-repeat;
+    width: 1.5rem;
+    height: 2.5rem;
+    background-size:100% 100% ;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: rotate(-15deg);
+    transform-origin: 0 0;
+    z-index: 999;
+    transition: transform 2s linear;
+}
+.disc{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 1.5rem;
+    height: 5rem;
+}
+.disc .disc_img{
+    width: 5rem;
+    height: 5rem;
+    background: url(/static/img/disc-ip6.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+.disc .disc_img .songImg{
+    display: block;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.55rem;
+    margin-top: -1.55rem;
+}
+.disc .disc_img .imgRotate{
+    animation: imgRotate linear infinite 10s ;
+}
+.disc .disc_img .stopImg{
+    animation: imgRotate linear infinite 10s ;
+    animation-play-state: paused;
+}
+@keyframes imgRotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.disc .disc_img .icon{
+    display: inline-block;
+    width: .83rem;
+    height: .83rem;
+    background: url(/static/img/list_sprite.png) ;
+    background-size:cover ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.4rem;
+    margin-top: -0.4rem;
+}
+.songlyric{
+    width: 100%;
+    min-height: 3rem;
+    margin-top: 1.7rem;
+    text-align: center;
+    color: #fff;
+}
+.songlyric .lyric{
+    position: relative;
+    margin-top: .2rem;
+    height: 3rem;
+    overflow: auto;
+}
+.songlyric .lyric .box{
+    height: 120px;
+    text-align: center;
+    width: 100%;
+    transition: .5s;
+    position: relative;
+}
+.songlyric .lyric .box p{
+    height: 1rem;
+    line-height: 1rem;
+}
+.songlyric .lyric .box .active{
+    color: skyblue;
+}

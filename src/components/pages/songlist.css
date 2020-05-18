@@ -1,0 +1,107 @@
+html,body,#root,.hot{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: .3rem;
+}
+.back{
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+    line-height: .7rem;
+    left: .2rem;
+    top: 1px;
+    z-index: 999;
+}
+.hot .banner{
+    width: 100%;
+    height: 2.2rem;
+    position: relative;
+    background-size:cover !important;
+    font-size: .2rem;
+    color: #fff;
+    filter: blur(5px);
+}
+.hot .little .pic{
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    bottom: 0;
+    z-index: 2;
+    padding-left: 20px;
+    box-sizing: border-box;
+    height: 1.6rem;
+}
+.hot .little .pic .cloud{
+    width: 1.8rem;
+    height: 1.6rem;
+    background-position: -.5rem -.6rem;
+    background-size:1.8rem 1.6rem !important;
+}
+.hot .little p{
+    position: absolute;
+    font-size: .3rem;
+    width: 4rem;
+    right: 0.1rem;
+    top:.5rem;
+    line-height: .5rem;
+    color: #fff;
+    
+}
+ .songlist{
+    padding-top: .3rem;
+    width: 100%;
+    min-height: 3rem;
+}
+ .songlist .item{
+    padding: .15rem;
+    border-bottom: 1px solid #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .songlist .item:nth-child(-n+3) .left {
+    color: red;
+}
+ .songlist .item .left{
+    font-size: .3rem;
+    width: .65rem;
+}
+ .songlist .item .middle{
+    flex: 1;
+}
+ .songlist .item .middle .song{
+    font-size: .3rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ .songlist .item .middle .singer{
+    font-size: .2rem;
+    margin-top: .2rem;
+    color: #666;
+}
+ .songlist .item .middle .singer .icon{
+    display: inline-block;
+    width: .24rem;
+    height: .16rem;
+    margin-right: .08rem;
+    background: url(/static/img/index_icon_2x.png) no-repeat;
+    background-size: 3.32rem 1.94rem;
+}
+ .songlist .item .right{
+    align-items: center;
+}
+ .songlist .item .right span{
+    background: url("/static/img/index_icon_2x.png") no-repeat;
+    background-position: -0.28rem 0 ;
+    background-size: 2.8rem 1.7rem;
+    display: block;
+    width: .5rem;
+    height: .5rem;
+}

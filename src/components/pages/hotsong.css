@@ -1,0 +1,83 @@
+.hotsong .banner{
+    height: 2.2rem;
+    background: url('/static/img/hotsong.jpg') no-repeat;
+    position: relative;
+    background-size:cover ;
+    font-size: .2rem;
+    color: #fff;
+}
+.hotsong .banner .pic{
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 0;
+    z-index: 2;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.hotsong .banner .pic .cloud{
+    width: 3rem;
+    height: 1.4rem;
+    background: url('/static/img/index_icon_2x.png') no-repeat;
+    background-position: -.5rem -.6rem;
+    background-size: 3rem 2rem;
+}
+.hotsong .banner .pic .date{
+    margin-top: .1rem;
+    margin-bottom:.1rem ;
+}
+.hotsong .songlist{
+    padding-top: .3rem;
+    width: 100%;
+    min-height: 3rem;
+}
+.hotsong .songlist .item{
+    padding: .15rem;
+    border-bottom: 1px solid #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hotsong .songlist .item:nth-child(-n+3) .left {
+    color: red;
+}
+.hotsong .songlist .item .left{
+    font-size: .3rem;
+    width: .65rem;
+}
+.hotsong .songlist .item .middle{
+    flex: 1;
+}
+.hotsong .songlist .item .middle .song{
+    font-size: .3rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.hotsong .songlist .item .middle .singer{
+    font-size: .2rem;
+    margin-top: .2rem;
+    color: #666;
+}
+.hotsong .songlist .item .middle .singer .icon{
+    display: inline-block;
+    width: .24rem;
+    height: .16rem;
+    margin-right: .08rem;
+    background: url(/static/img/index_icon_2x.png) no-repeat;
+    background-size: 3.32rem 1.94rem;
+}
+.hotsong .songlist .item .right{
+    align-items: center;
+}
+.hotsong .songlist .item .right span{
+    background: url("/static/img/index_icon_2x.png") no-repeat;
+    background-position: -0.28rem 0 ;
+    background-size: 2.8rem 1.7rem;
+    display: block;
+    width: .5rem;
+    height: .5rem;
+}
